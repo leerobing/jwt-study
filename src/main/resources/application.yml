@@ -1,0 +1,33 @@
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: lhb64961077
+    url: jdbc:mysql://localhost:3306/jwtStudy?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    generate-ddl: true
+
+logging.level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
+      # parameter Binding
+
+jwt:
+  secret:
+    fske256d3433kf2@er454ddd!35435rd!!!dkzfefdsdfildkifldxfd5ds
